@@ -15,6 +15,9 @@ ReactDOM.render(
           <Route path="/profile">
             <div>This is the Profile page!!</div>
           </Route>
+          <Route path="/missions">
+            <div>This is the missions page!!</div>
+          </Route>
         </Switch>
       </Router>
     </Provider>
