@@ -13,6 +13,10 @@ code {
 }
 
 /* style for Header component */
+svg {
+  margin-right: 1em;
+}
+
 header {
   display: flex;
   padding: 2em;
@@ -23,10 +27,6 @@ header {
 header > div:first-child {
   display: flex;
   align-items: center;
-}
-
-svg {
-  margin-right: 1em;
 }
 
 header > div:first-child a {
@@ -41,6 +41,28 @@ header > div:last-child a {
   padding: 0 0.75em;
 }
 
-header > div:last-child a:nth-child(2) {
-  border-right: 1px solid black;
+.header-links {
+  display: flex;
+  list-style: none;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 10px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navBar ul li {
+  padding-right: 30px;
+}
+
+.active-link {
+  text-decoration: underline;
 }

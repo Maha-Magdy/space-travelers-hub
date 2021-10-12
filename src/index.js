@@ -12,6 +12,11 @@ ReactDOM.render(
     <Provider store={store}>
       <Router>
       <Header />
+      <Switch>
+        <Route path="/profile">
+          <div>This is the Profile page!!</div>
+        </Route>
+      </Switch>
       </Router>
     </Provider>
   </React.StrictMode>,
