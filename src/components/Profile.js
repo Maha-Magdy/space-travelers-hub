@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Profile = ({ profile }) => (
-    <div>
-        Profile page
-    </div>
+const Profile = () => (
+  <div>
+    Profile page
+  </div>
 
 );
 
