@@ -26,6 +26,12 @@ code {
     monospace;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* style for Header component */
 svg {
   margin-right: 1em;
@@ -65,12 +71,6 @@ header > div:last-child a {
   justify-content: flex-end;
   list-style: none;
   margin-top: 10px;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: inherit;
 }
 
 .navBar ul li {
