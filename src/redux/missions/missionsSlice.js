@@ -1,28 +1,26 @@
-import fetchMissions from '../../controller/missions-api';
+const URL = 'https://api.spacexdata.com/v3/missions';
 
-const GET_MISSIONS = 'missions/GET_MISSIONS';
+// Actions
+const LOAD = 'spaceships/missions/LOAD';
 
-const getMissions = (payload) => ({
-  type: GET_MISSIONS,
-  payload,
-});
-
-const initialState = [];
-
-const missionsReducer = (state = initialState, action) => {
+// Reducer
+export default (state = [], action) => {
   switch (action.type) {
-    case GET_MISSIONS:
-      return action.payload;
-
+    case LOAD:
+      return action.state;
     default:
       return state;
   }
 };
 
-export const getMissionsThunk = () => (dispatch) => {
-  fetchMissions().then((res) => {
-    dispatch(getMissions(res));
-  });
+// Action Creators
+export const loadMissions = () => async (dispatch) => {
+  const res = await fetch(URL);
+  const data = await res.json();
+  const state = data.map((mission) => ({
+    mission_id: mission.mission_id,
+    mission_name: mission.mission_name,
+    description: mission.description,
+  }));
+  dispatch({ type: LOAD, state });
 };
-
-export default missionsReducer;

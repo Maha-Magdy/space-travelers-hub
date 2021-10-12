@@ -1,29 +1,16 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import Mission from './Mission';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { bindActionCreators } from 'redux';
+import { loadMissions } from '../redux/missions/missionsSlice';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.missionsReducer);
-
-  return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>MISSION</th>
-            <th>DESCRIPTION</th>
-            <th>STATUS</th>
-            <th> </th>
-          </tr>
-        </thead>
-        <tbody>
-          {missions.map((mission) => (
-            <Mission key={mission.mission_id} mission={mission} />
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+  const dispatch = useDispatch();
+  const missions = useSelector((state) => state.missions);
+  const loadMissionsAction = bindActionCreators(loadMissions, dispatch);
+  useEffect(() => {
+    if (missions.length === 0) loadMissionsAction();
+    return () => null;
+  }, []);
+  return <div className="profile">coming soon</div>;
 };
-
 export default Missions;
