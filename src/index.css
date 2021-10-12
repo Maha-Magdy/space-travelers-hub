@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* style for Header component */
+svg {
+  margin-right: 1em;
+}
+
+header {
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+header > div:first-child a {
+  text-decoration: unset;
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+header > div:last-child a {
+  color: #3aadff;
+  padding: 0 0.75em;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.navBar ul li {
+  padding-right: 30px;
+}
+
+.active-link {
+  text-decoration: underline;
+}
