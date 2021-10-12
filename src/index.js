@@ -5,6 +5,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import Header from './components/Header';
+import Missions from './components/Missions';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,7 +17,7 @@ ReactDOM.render(
             <div>This is the Profile page!!</div>
           </Route>
           <Route path="/missions">
-            <div>This is the missions page!!</div>
+            <Missions />
           </Route>
         </Switch>
       </Router>
