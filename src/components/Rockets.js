@@ -1,5 +1,46 @@
-export default function Rockets() {
-  return (
-    <h1>Here is Rockets page</h1>
-  );
+/* eslint-disable react/prop-types */
+import axios from 'axios';
+import { useDispatch, connect } from 'react-redux';
+import { useEffect } from 'react';
+import { rocketsList } from '../redux/rockets/rockets';
+import Rocket from './Rocket';
+
+function Rockets(props) {
+  const dispatch = useDispatch();
+  const { rockets } = props;
+
+  useEffect(() => {
+    if (rockets.length === 0) {
+      axios.get('https://api.spacexdata.com/v3/rockets').then((response) => {
+        const { data } = response;
+        const result = data.map((rocket) => ({
+          id: rocket.rocket_id,
+          name: rocket.rocket_name,
+          type: rocket.rocket_type,
+          flickr_images: rocket.flickr_images,
+        }));
+        dispatch(rocketsList(result));
+      });
+    }
+  }, []);
+
+  if (rockets !== []) {
+    return (
+      <ul>
+        {rockets.map((rocket) => (
+          <li key={rocket.id}>
+            <Rocket rocket={rocket} />
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  return <h1>Here is Rockets page</h1>;
 }
+
+const mapStateToProps = (state) => ({
+  rockets: state.rocketsReducer,
+});
+
+export default connect(mapStateToProps)(Rockets);
