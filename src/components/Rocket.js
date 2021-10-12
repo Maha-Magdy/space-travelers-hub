@@ -6,6 +6,7 @@ export default function Rocket(props) {
       <div />
       <div>
         <h3>{rocket.name}</h3>
+        <p>{rocket.description}</p>
       </div>
     </div>
   );
