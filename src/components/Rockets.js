@@ -26,9 +26,9 @@ function Rockets(props) {
 
   if (rockets !== []) {
     return (
-      <ul>
+      <ul className="container-fluid rockets">
         {rockets.map((rocket) => (
-          <li key={rocket.id}>
+          <li key={rocket.id} className="mb-3">
             <Rocket rocket={rocket} />
           </li>
         ))}

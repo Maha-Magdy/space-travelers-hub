@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import Header from './components/Header';
 import Rockets from './components/Rockets';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -20,7 +20,7 @@ const Header = () => {
     },
   ];
   return (
-    <header>
+    <header className="container-fluid">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

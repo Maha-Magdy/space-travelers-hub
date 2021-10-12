@@ -59,7 +59,7 @@ header > div:first-child a {
 }
 
 header > div:last-child a {
-  color: #3aadff;
+  color: #0d6efd;
   padding: 0 0.75em;
 }
 
@@ -81,4 +81,10 @@ header > div:last-child a {
 
 .active-link {
   text-decoration: underline;
+}
+
+/* style for rockets page */
+.rockets img {
+  max-width: 275px;
+  height: auto;
 }
