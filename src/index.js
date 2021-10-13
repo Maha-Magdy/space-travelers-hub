@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './index.css';
 import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import store from './redux/configureStore';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 import Header from './components/Header';
 import Rockets from './components/Rockets';
 import Profile from './components/Profile';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Missions from './components/Missions';
 
 ReactDOM.render(
