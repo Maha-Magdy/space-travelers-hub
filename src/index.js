@@ -5,9 +5,13 @@ import './index.css';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import Header from './components/Header';
+<<<<<<< HEAD
 import Rockets from './components/Rockets';
 import Profile from './components/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+import Missions from './components/Missions';
+>>>>>>> dev
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +24,9 @@ ReactDOM.render(
           </Route>
           <Route path="/">
             <Rockets />
+          </Route>
+          <Route path="/missions">
+            <Missions />
           </Route>
         </Switch>
       </Router>
