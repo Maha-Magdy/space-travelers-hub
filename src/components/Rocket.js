@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types, no-unused-vars */
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../redux/rockets/rockets';
+import { reserveRocket, cancelReservation } from '../redux/rockets/rockets';
 
 export default function Rocket(props) {
   const dispatch = useDispatch();
   const { rocket } = props;
   const reserveThisRocket = () => {
     dispatch(reserveRocket(rocket.id));
+  };
+
+  const cancelThisReservation = () => {
+    dispatch(cancelReservation(rocket.id));
   };
 
   return (
@@ -27,6 +31,13 @@ export default function Rocket(props) {
           onClick={reserveThisRocket}
         >
           Reserve Rocket
+        </button>
+        <button
+          type="button"
+          className="btn btn-light cancel-button"
+          onClick={cancelThisReservation}
+        >
+          Cancel Reservation
         </button>
       </div>
     </div>
