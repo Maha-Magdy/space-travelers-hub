@@ -8,7 +8,7 @@ import { loadMissions, selectMission, leaveMission } from '../redux/missions/mis
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.missionsReducer);
 
   useEffect(() => {
     if (missions.length === 0) dispatch(loadMissions());
