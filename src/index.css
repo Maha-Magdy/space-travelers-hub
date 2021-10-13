@@ -104,3 +104,8 @@ header > div:last-child a {
   background-color: unset;
   color: #7a7878;
 }
+
+.rockets .reserved-badge {
+  background-color: #1ba4b6;
+  font-weight: 600;
+}

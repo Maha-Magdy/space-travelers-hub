@@ -24,21 +24,30 @@ export default function Rocket(props) {
       </div>
       <div className="ps-3">
         <h3>{rocket.name}</h3>
-        <p>{rocket.description}</p>
-        <button
-          type="button"
-          className="btn btn-primary"
-          onClick={reserveThisRocket}
-        >
-          Reserve Rocket
-        </button>
-        <button
-          type="button"
-          className="btn btn-light cancel-button"
-          onClick={cancelThisReservation}
-        >
-          Cancel Reservation
-        </button>
+        <p>
+          {rocket.reserved && (
+            <span className="badge reserved-badge me-2">Reserved</span>
+          )}
+          {rocket.description}
+        </p>
+        {!rocket.reserved && (
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={reserveThisRocket}
+          >
+            Reserve Rocket
+          </button>
+        )}
+        {rocket.reserved && (
+          <button
+            type="button"
+            className="btn btn-light cancel-button"
+            onClick={cancelThisReservation}
+          >
+            Cancel Reservation
+          </button>
+        )}
       </div>
     </div>
   );
