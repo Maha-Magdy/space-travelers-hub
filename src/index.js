@@ -5,6 +5,9 @@ import './index.css';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';
 import Header from './components/Header';
+import Rockets from './components/Rockets';
+import Profile from './components/Profile';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Missions from './components/Missions';
 
 ReactDOM.render(
@@ -14,7 +17,10 @@ ReactDOM.render(
         <Header />
         <Switch>
           <Route path="/profile">
-            <div>This is the Profile page!!</div>
+            <Profile />
+          </Route>
+          <Route path="/">
+            <Rockets />
           </Route>
           <Route path="/missions">
             <Missions />

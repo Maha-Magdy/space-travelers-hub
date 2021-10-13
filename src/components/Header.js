@@ -14,13 +14,13 @@ const Header = () => {
       text: 'Missions',
     },
     {
-      id: 2,
+      id: 3,
       path: '/profile',
       text: 'My Profile',
     },
   ];
   return (
-    <header>
+    <header className="container-fluid">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"

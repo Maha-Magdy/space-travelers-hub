@@ -32,6 +32,30 @@ a:visited {
   color: inherit;
 }
 
+/* Common styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 128, 128);
+}
+
 /* style for Header component */
 svg {
   margin-right: 1em;
@@ -39,9 +63,11 @@ svg {
 
 header {
   display: flex;
-  padding: 2em;
+  padding: 1em 2em;
+  margin-bottom: 1em;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #cacaca;
 }
 
 header > div:first-child {
@@ -57,7 +83,7 @@ header > div:first-child a {
 }
 
 header > div:last-child a {
-  color: #3aadff;
+  color: #0d6efd;
   padding: 0 0.75em;
 }
 
@@ -79,4 +105,31 @@ header > div:last-child a {
 
 .active-link {
   text-decoration: underline;
+}
+
+/* style for rockets page */
+.rockets img {
+  max-width: 275px;
+  height: auto;
+}
+
+.rockets .cancel-button {
+  border: 1px solid #828282;
+  background-color: unset;
+  color: #7a7878;
+}
+
+.rockets .reserved-badge {
+  background-color: #1ba4b6;
+  font-weight: 600;
+}
+
+/* style for profile page */
+.profile ul li {
+  border: 1px solid #cacaca;
+  border-bottom: unset;
+}
+
+.profile ul li:last-child {
+  border-bottom: 1px solid #cacaca;
 }
