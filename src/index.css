@@ -109,3 +109,13 @@ header > div:last-child a {
   background-color: #1ba4b6;
   font-weight: 600;
 }
+
+/* style for profile page */
+.profile ul li {
+  border: 1px solid #cacaca;
+  border-bottom: unset;
+}
+
+.profile ul li:last-child {
+  border-bottom: 1px solid #cacaca;
+}
