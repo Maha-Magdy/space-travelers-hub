@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 const Profile = (props) => {
   const { rockets } = props;
   const { missions } = props;
-  console.log('Hello', props);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved === true);
   const reservedMissions = missions.filter((mission) => mission.reserved === true);
   return (
