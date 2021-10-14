@@ -44,10 +44,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - GitHub: [@herokudev](https://github.com/herokudev)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/herbert-armando-orellana-a0b50b34/)
 ​
-👨‍💻 **Maha Magdy**
-​
-- GitHub: [@Maha-Magdy](https://github.com/Maha-Magdy)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/)
+
+👤 **Maha Magdy**
+
+- GitHub: [Maha-Magdy](https://github.com/Maha-Magdy)
+- Twitter: [@Maha_M_Abdelaal](https://twitter.com/Maha_M_Abdelaal)
+- LinkedIn: [Maha Magdy](https://www.linkedin.com/in/maha-magdy-abdelaal/)
 ​
 
 ## 🤝 Contributing
