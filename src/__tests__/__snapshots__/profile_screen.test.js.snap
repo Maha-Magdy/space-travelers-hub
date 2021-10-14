@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile screen renders as expected 1`] = `
+<div
+  className="container-fluid profile"
+>
+  <div
+    className="row align-items-start"
+  >
+    <div
+      className="col"
+    >
+      <h5>
+        My Missions
+      </h5>
+      <p>
+        There's no reserved missions
+      </p>
+      <ul
+        className="p-0 list-unstyled"
+      />
+    </div>
+    <div
+      className="col"
+    >
+      <h5>
+        My Rockets
+      </h5>
+      <p>
+        There's no reserved rockets
+      </p>
+      <ul
+        className="p-0 list-unstyled"
+      />
+    </div>
+  </div>
+</div>
+`;
