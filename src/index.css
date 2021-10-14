@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
+
+.black {
+  color: black;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Common styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 128, 128);
+}
+
+/* style for Header component */
+svg {
+  margin-right: 1em;
+}
+
+header {
+  display: flex;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cacaca;
+}
+
+header > div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+header > div:first-child a {
+  text-decoration: unset;
+  color: black;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+header > div:last-child a {
+  color: #0d6efd;
+  padding: 0 0.75em;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.navBar ul li {
+  padding-right: 30px;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+/* style for rockets page */
+.rockets img {
+  max-width: 275px;
+  height: auto;
+}
+
+.rockets .cancel-button {
+  border: 1px solid #828282;
+  background-color: unset;
+  color: #7a7878;
+}
+
+.rockets .reserved-badge {
+  background-color: #1ba4b6;
+  font-weight: 600;
+}
+
+/* style for profile page */
+.profile ul li {
+  border: 1px solid #cacaca;
+  border-bottom: unset;
+}
+
+.profile ul li:last-child {
+  border-bottom: 1px solid #cacaca;
+}
