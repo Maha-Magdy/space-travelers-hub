@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 const Profile = (props) => {
   const { rockets } = props;
   const { missions } = props;
+  console.log('Hello', props);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved === true);
   const reservedMissions = missions.filter((mission) => mission.reserved === true);
   return (
@@ -13,11 +14,11 @@ const Profile = (props) => {
         <div className="col">
           <h5>My Missions</h5>
           {reservedMissions.length === 0 && (
-            <p>There&apos;s no reserved rockets</p>
+            <p>There&apos;s no reserved missions</p>
           )}
           <ul className="p-0 list-unstyled">
             {reservedMissions.map((reservedMission) => (
-              <li key={reservedMission.id} className="p-2">{reservedMission.name}</li>
+              <li key={reservedMission.mission_id} className="p-2">{reservedMission.mission_name}</li>
             ))}
           </ul>
         </div>
@@ -39,7 +40,7 @@ const Profile = (props) => {
 
 const mapStateToProps = (state) => ({
   rockets: state.rocketsReducer,
-  missions: state.missionReducer,
+  missions: state.missionsReducer,
 });
 
 export default connect(mapStateToProps)(Profile);
