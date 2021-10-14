@@ -4,7 +4,7 @@
 
 > This project will be working with the real live data from the SpaceX API. Your task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-A screenshot of the Books page is presented below:
+A screenshot of the Space Travelers' Hub is presented below:
 
 <p align="center">
     <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot.png" width="700">
@@ -44,10 +44,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - GitHub: [@herokudev](https://github.com/herokudev)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/herbert-armando-orellana-a0b50b34/)
 ​
-👨‍💻 **Maha Magdy**
-​
-- GitHub: [@Maha-Magdy](https://github.com/Maha-Magdy)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/)
+
+👤 **Maha Magdy**
+
+- GitHub: [Maha-Magdy](https://github.com/Maha-Magdy)
+- Twitter: [@Maha_M_Abdelaal](https://twitter.com/Maha_M_Abdelaal)
+- LinkedIn: [Maha Magdy](https://www.linkedin.com/in/maha-magdy-abdelaal/)
 ​
 
 ## 🤝 Contributing
