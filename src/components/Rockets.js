@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import axios from 'axios';
-import { useDispatch, connect } from 'react-redux';
+import { useSelector, useDispatch, connect } from 'react-redux';
 import { useEffect } from 'react';
 import { rocketsList } from '../redux/rockets/rockets';
 import Rocket from './Rocket';
 
-function Rockets(props) {
+function Rockets() {
   const dispatch = useDispatch();
-  const { rockets } = props;
+  const rockets = useSelector((state) => state.rocketsReducer);
 
   useEffect(() => {
     if (rockets.length === 0) {
@@ -22,7 +22,7 @@ function Rockets(props) {
         dispatch(rocketsList(result));
       });
     }
-  }, []);
+  }, [dispatch, rockets.length]);
 
   if (rockets !== []) {
     return (

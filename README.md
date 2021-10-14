@@ -15,27 +15,32 @@ A screenshot of the Space Travelers' Hub is presented below:
 - React
 - Redux
 - Js
+## Pre-requisites
 
+- NodeJs
+- Git
 ## Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+his project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+To run this project, you only need a computer with a browser installed, and follow these steps:
 
-In the project directory, you can run:
 
-### `npm start`
+1. In your terminal, in the folder of your preference, type the following bash command to clone this repository:
+
+```sh
+git clone https://github.com/Maha-Magdy/space-travelers-hub.git
+```
+
+2. Now that you have already cloned the repo run the following commands to get the project up and running:
+```sh
+cd bookstore
+npm install
+npm start
+```
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Authors
 ​
