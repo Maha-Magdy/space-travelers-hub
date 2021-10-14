@@ -4,7 +4,7 @@
 
 > This project will be working with the real live data from the SpaceX API. Your task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-A screenshot of the Books page is presented below:
+A screenshot of the Space Travelers' Hub is presented below:
 
 <p align="center">
     <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot.png" width="700">
