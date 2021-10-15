@@ -4,9 +4,9 @@
 
 A screenshot of the Space Travelers' Hub is presented below:
 
-<p align="center">
-  <img alt="Home Page" style="border: 1px solid black; display: inline-block" src="./app_screenshot_1.png" width="50%">
-  <img alt="Home Page" style="border: 1px solid black; display: inline-block" src="./app_screenshot_2.png" width="50%">
+<p float="left">
+  <img alt="Home Page" style="border: 1px solid black; display: inline-block" src="./app_screenshot_1.png" width="45%">
+  <img alt="Home Page" style="border: 1px solid black; display: inline-block" src="./app_screenshot_2.png" width="45%">
  </p>
 
 ## Built With
