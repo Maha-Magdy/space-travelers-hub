@@ -7,10 +7,10 @@
 A screenshot of the Space Travelers' Hub is presented below:
 
 <p align="left">
-    <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot_1.png" width="700">
+    <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot_1.png" width="50%">
 </p>
 <p align="right">
-    <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot_2.png" width="700">
+    <img alt="Home Page" style="border: 1px solid black;" src="./app_screenshot_2.png" width="50%">
 </p>
 
 ## Built With
