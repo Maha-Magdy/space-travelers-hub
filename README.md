@@ -34,7 +34,7 @@ git clone https://github.com/Maha-Magdy/space-travelers-hub.git
 
 2. Now that you have already cloned the repo run the following commands to get the project up and running:
 ```sh
-cd bookstore
+cd space-travelers-hub
 npm install
 npm start
 ```
